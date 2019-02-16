@@ -3,7 +3,7 @@ function main(input) {
         console.log(n); 
     });
 }
-function mdc(valueOne, valueTwo){
+const mdc = (valueOne, valueTwo) =>{
     let rest = 1
     while( rest !== 0){
         rest = valueTwo % valueOne
@@ -14,7 +14,7 @@ function mdc(valueOne, valueTwo){
 }
 process.stdin.resume();
 process.stdin.setEncoding("utf-8");
-var stdin_input = "";
+let stdin_input = "";
 process.stdin.on("data", function (input) {
     stdin_input += input;
     let numbers = stdin_input.split('\r\n')
@@ -33,5 +33,3 @@ process.stdin.on("data", function (input) {
 process.stdin.on("end", function () {
    main(stdin_input);
 });
-
-
